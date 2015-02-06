@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d0d8d3ea97cd65e57d79b1ef42e4a5f0",
+    "hash": "cb3a9c78fbf231fded727566004a38ca",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -954,6 +954,42 @@
             "time": "2014-12-12 05:04:05"
         },
         {
+            "name": "mattdunbar/usermicroservicebundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MattDunbar/UserMicroServiceBundle.git",
+                "reference": "f74feb75b8642e979e0c09162e648a9f1e970a38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MattDunbar/UserMicroServiceBundle/zipball/f74feb75b8642e979e0c09162e648a9f1e970a38",
+                "reference": "f74feb75b8642e979e0c09162e648a9f1e970a38",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "<2.5",
+                "doctrine/doctrine-bundle": "~1.2",
+                "doctrine/orm": "~2.2,>=2.2.3,<2.5",
+                "friendsofsymfony/user-bundle": "~2.0@dev",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "2.6.*",
+                "uecode/api-key-bundle": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "MattDunbar\\UserMicroServiceBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "User Micro Service for Symfony 2",
+            "time": "2015-02-06 10:22:34"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.12.0",
             "source": {
@@ -1767,7 +1803,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20,
-        "uecode/api-key-bundle": 20
+        "uecode/api-key-bundle": 20,
+        "mattdunbar/usermicroservicebundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
