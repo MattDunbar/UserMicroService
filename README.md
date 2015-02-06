@@ -3,6 +3,7 @@ A Symfony 2 based simple micro service providing user registration and api token
 ## Setup
  1. Set up database config in app/config/parameters.yml
  2. Run database migrations `php app/console doctrine:schema:update --force`
+
 ## Usage
 ### Login
 Used to exchange the user's email and password for an API Token.
