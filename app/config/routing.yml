@@ -1,0 +1,7 @@
+matt_dunbar_user_micro_service:
+    resource: @MattDunbarUserMicroServiceBundle/Controller/
+    type:     annotation
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation

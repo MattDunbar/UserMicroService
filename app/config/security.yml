@@ -1,0 +1,27 @@
+security:
+    encoders:
+        FOS\UserBundle\Model\UserInterface: sha512
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+
+    providers:
+        api_user:
+            id: uecode.api_key.provider.user_provider
+
+    firewalls:
+        dev:
+            pattern:    ^/(_profiler|_wdt|css|js)
+            security:   false
+        auth:
+            pattern:    ^/auth/(login|register)
+            security:   false
+        main:
+            api_key: true
+            stateless: true
+        #    anonymous:    true
+
+    access_control:
+        - { path: ^/auth/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/auth/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
